@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Harvest Hub</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+
+      @font-face {
+    font-family: myBingo;
+    src: url(Bingo.ttf);
+  }
+    body{
+      background-color: white;
+    }
+
+    h3{
+      font-family: myBingo;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      color: #67330e;
+
+    }
+
+  .logo {
+
+    height: 70px;
+    width: auto;
+    margin-left: 20PX;
+    margin-top: 8PX;
+  }
+
+  .topnav {
+    background-color: #67330e;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav a:hover {
+    background-color: white;
+    opacity: 50%;
+    color: #67330e;
+  }
+
+  .topnav a.active {
+    background-color:  white;
+    opacity: 50%;
+    color: #67330e;
+  }
+
+  .header {
+  padding: 60px;
+  text-align: center;
+  background: antiquewhite;
+  font-size: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #67330e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #67330e;
+  opacity:50%
+}
+
+.container {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+
+  </style>
+  </head>
+
+<body> 
+  <header>
+    <a href="index.html">
+      <img class ="logo" src="logo.png" alt="logo" /></div></a>
+  </header>
+
+   <div class="topnav">
+      <a class="active" href="contacts.html">Contact Us</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order Online</a>
+      <a href="events.html">Events</a>
+  </div>
+
+<h3>Contact Us</h3>
+
+<div class="container">
+  <form onsubmit="myFunction()"> 
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your name..">
+
+    <label for="lname">Email Address</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your email..">
+
+    <label for="country">Topic</label>
+    <select id="country" name="country">
+      <option value="General Inquiry">General Inquiry</option>
+      <option value="Vendor/Seller Related">Vendor/Seller Related</option>
+      <option value="Customer Service">Customer Service</option>
+    </select>
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+ 
+</body>
+<script>
+function myFunction() {
+  alert("We will get back to you as soon as possible! Thank you.");
+}
+</script>
