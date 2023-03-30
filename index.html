@@ -1,17 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+ <head>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Harvest Hub</title>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Testing</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <style>
+
+  	@font-face {
+    font-family: myBingo;
+    src: url(Bingo.ttf);
+	}
+  	body{
+  		background-color: antiquewhite;
+  	}
+	header{
+		background-color: white;
+	}
+	h2{
+		font-family: myBingo;
+		margin-top: 100PX;
+		margin-bottom: 100PX;
+			  color: #67330e;
+	}
+	
+	.logo {
+
+		height: 70px;
+		width: auto;
+		margin-left: 20PX;
+		margin-top: 8PX;
+	}
+
+	.topnav {
+		background-color: #67330e;
+		overflow: hidden;
+	}
+
+	.topnav a {
+	  float: left;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 14px;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.topnav a:hover {
+	  background-color: white;
+	  opacity: 50%;
+	  color: #67330e;
+	}
+
+	.topnav a.active {
+	  background-color:  white;
+	  opacity: 50%;
+	  color: #67330e;
+	}
+
+.mySlides {
+	display:none;
+	margin-bottom: 100PX;
+}
+
+.intro{
+	background-color: #67330e;
+	color: white;
+	padding-top: 70px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+
+
+}
+
+.button {
+  background-color: burlywood;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #67330e;
+}
+
+p {
+  line-height: 32px;   /* within paragraph */
+  margin-bottom: 50px; /* between paragraphs */
+  }
+
+  /* Style the form element with a border around it */
+
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #67330e;
+  color: white;
+  border: none;
+
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+  </style>
   </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website!!</h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
+
+<body> 
+	<header>
+		<a href="index.html">
+			<img class ="logo" src="logo.png" alt="logo" /></div></a>
+	</header>
+
+	 <div class="topnav">
+  		<a class="active" href="index.html">Home</a>
+  		<a href="about.html">About</a>
+  		<a href="order.html">Order Online</a>
+  		<a href="events.html">Events</a>
+  		<a href="contacts.html">Contact Us</a>
+	</div>
+
+	<h2 class="w3-center">Shopping Local Made Accessible</h2>
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="farmer1.jpeg" style="width:100%">
+  <img class="mySlides" src="farmer2.jpg" style="width:100%">
+  <img class="mySlides" src="farmer3.jpg" style="width:100%">
+  <img class="mySlides" src="farmer4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div class = "intro">
+	  <p style="font-family: myBingo;font-size:20px">Support Sustainable Farming</p>
+	  <p style="font-size:17px">The best and most sustainable foods are right near you.<br> Support local farming, lower your carbon footprint, <br>and enjoy the most delicious fruits and vegetables by finding exclusively local sellers near you. </p>
+
+<button class="button"><a href="about.html">Discover More</a>
+</button>
+
+<form onsubmit="myFunction()">
+  <div class="container">
+    <p style="font-family: myBingo;font-size:15px; color:#67330e; margin-bottom: 0px;">Subscribe to our Newsletter</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+  
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+function myFunction() {
+  alert("Thanks for subscribing to our newsletter!");
+}
+</script>
+</body>
 </html>
