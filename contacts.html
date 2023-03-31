@@ -125,10 +125,10 @@ input[type=submit]:hover {
 <div class="container">
   <form onsubmit="myFunction()"> 
     <label for="fname">Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Enter your name..">
+    <input type="text" id="fname" name="firstname" placeholder="Enter your name.." required>
 
     <label for="lname">Email Address</label>
-    <input type="text" id="lname" name="lastname" placeholder="Enter your email..">
+    <input type="text" id="lname" name="lastname" placeholder="Enter your email.." required>
 
     <label for="country">Topic</label>
     <select id="country" name="country">
@@ -138,7 +138,7 @@ input[type=submit]:hover {
     </select>
 
     <label for="subject">Message</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
 
     <input type="submit" value="Submit">
   </form>
