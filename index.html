@@ -174,7 +174,7 @@ input[type=submit]:hover {
 <button class="button"><a href="about.html">Discover More</a>
 </button>
 
-<form onsubmit="sendEmail()">
+<form onsubmit="myFunction()">
   <div class="container">
     <p style="font-family: myBingo;font-size:15px; color:#67330e; margin-bottom: 0px;">Subscribe to our Newsletter</p>
   </div>
@@ -210,23 +210,6 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
-import Email from 'emailjs';
-
-function sendEmail(){
-	Email.send({
-		Host: "smtp.gmail.com",
-		Username: "harvest.hub.info@gmail.com",
-		Password: "123456Aa",
-		To: "harvest.hub.info@gmail.com" , 
-		From: document.getElementById("email").value,
-		Subject: "Newsletter Form Request",
-		Body: "Name: " + document.getElementById("name").value 
-		+ "<br> Email: " + document.getElementById("email").value
-
-	}).then(
-		message => alert("Thanks for subscribing to our newsletter!")
-	);
-}
 function myFunction() {
   alert("Thanks for subscribing to our newsletter!");
 }
