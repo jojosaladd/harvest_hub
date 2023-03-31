@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Harvest Hub</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+
+      @font-face {
+    font-family: myBingo;
+    src: url(Bingo.ttf);
+  }
+
+    .logo {
+
+    height: 70px;
+    width: auto;
+    margin-left: 20PX;
+    margin-top: 8PX;
+  }
+
+
+  header{
+      background-color:  white;
+  }
+    body{
+      background-color: antiquewhite;
+    }
+
+  .header {
+  padding: 60px;
+  text-align: center;
+  background: antiquewhite;
+  font-size: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+  h3{
+      font-family: myBingo;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 10px;
+      color: #67330e;
+
+    }
+
+    h4{
+      text-align:  center;
+      padding-right: 80px;
+      padding-left: 80px;
+    }
+
+input[type=submit] {
+  background-color: #67330e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #67330e;
+  opacity:50%
+}
+
+.container {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+  
+}
+  </style>
+  </head>
+
+<body> 
+  <header>
+    <a href="index.html">
+      <img class ="logo" src="logo.png" alt="logo" /></div></a>
+  </header>
+     
+     <h3>Order Form</h3>
+          <h4>Kindly complete this order form, and one of our representatives will be in touch with you within one business day to provide further instructions. If you require additional help, please visit our "Contact Us" page.</h4>
+
+
+<div class="container">
+  <form onsubmit="myFunction()"> 
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your name.." required>
+
+    <label for="lname">Email Address</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your email.." required>
+
+        <label for="lname">Phone Number</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your phone number.." required>
+
+    <label for="country">Preferred Payment Method</label>
+    <select id="country" name="country">
+      <option value="General Inquiry">Venmo/Zelle</option>
+      <option value="Vendor/Seller Related">Credit Card</option>
+      <option value="Customer Service">Cash</option>
+    </select>
+
+        <label for="country">Delivery Method</label>
+    <select id="country" name="country">
+      <option value="General Inquiry">Pick Up(FREE)</option>
+      <option value="Vendor/Seller Related">Home Delivery</option>
+      <option value="Customer Service">Fedex/UPS 1-Day Shipping Method</option>
+    </select>
+
+
+    <label for="subject">Item to Order & Quantity</label>
+    <textarea id="subject" name="subject" placeholder="Ex) Farmer Lily's Apply Qty: 3.." required style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+ 
+
+</body>
+<script>
+function myFunction() {
+  alert("We will get back to you as soon as possible! Thank you.");
+}
+</script>
