@@ -20,6 +20,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <style>
+    .centered {
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      color: white;
+      font-family: "Museo", cursive;
+      font-size: 48px;
+    }
+    .subtitle{
+      position: absolute;
+      top: 60%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      color: white;
+      font-family: "Arial", cursive;
+      font-size: 25px;
+    }
+    .content_title{
+    color: #7a391f;
+    font-family: "Arial", cursive;
+    font-size: 30px;
+    padding-left: 30px;
+    margin-top: 30px;
+   }
+
+
+    .order_button{
+      position: absolute;
+      top: 80%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+    }
+
+    .container_1 {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin-left: 200px;
+      margin-bottom:30px
+    }
+
+    .box {
+      width: 30%;
+      height: 240px;
+      border: None
+      margin-bottom:100px;
+      background-color:white;
+
+}
+
 
   	@font-face {
     font-family: myBingo;
@@ -73,10 +126,18 @@
 	  color: #67330e;
 	}
 
-.mySlides {
-	display:none;
-	margin-bottom: 100PX;
-}
+    .mySlides {
+        display:none;
+        margin-bottom: 100PX;
+       padding-top: 60px;
+    }
+    .mySlides {
+		display: block;
+		max-width: 2000px;
+		width: 150%;
+		max-height: 700px;
+		margin: auto;
+	}
 
 .intro{
 	background-color: #67330e;
@@ -89,6 +150,9 @@
 
 
 }
+h4{padding-left: 30px;
+text-align: center;
+font-family: "Museo", cursive;}
 
 .button {
   background-color: burlywood;
@@ -109,10 +173,20 @@
   color: #67330e;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   line-height: 32px;   /* within paragraph */
   margin-bottom: 50px; /* between paragraphs */
   }
+
+  iframe {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px
+      }
 
   /* Style the form element with a border around it */
 
@@ -164,7 +238,6 @@ input[type=submit]:hover {
   		<a href="contacts.html">Contact Us</a>
 	</div>
 
-	<h2 class="w3-center">Shopping Local Made Accessible</h2>
 
 
 <div class="w3-content w3-display-container">
@@ -172,10 +245,40 @@ input[type=submit]:hover {
   <img class="mySlides" src="farmer2.jpg" style="width:100%">
   <img class="mySlides" src="farmer3.jpg" style="width:100%">
   <img class="mySlides" src="farmer4.jpg" style="width:100%">
-
+    <h1 class="centered">Shopping Local Market</h1>
+    <h3 class="subtitle">Discover Farm Near You Today</h3>
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <button class="order_button"><a href="order.html">Shop Online</a></button>
 </div>
+
+ <h1 class="content_title"> Upcoming Event</h1>
+    <div class="container_1">
+          <div class="box">
+          <a href="event1.html"><img src="event_1.jpg" style="width:100%">
+              <h4>Animal Center</h4>
+              <h4 style="color:gray; font-size:17px; font-family: Arial">June 3rd 2023</h4></a>
+          </div>
+        <div class="box">
+          <a href="event2.html"><img src="event_2.jpg" style="width:100%">
+            <h4>Downtown Santa Monica Farmer's Market</h4>
+            <h4 style="color:gray; font-size:17px; font-family: Arial">April-June 2023</h4></a>
+          </div>
+        <div class="box">
+          <a href="event3.html"><img src="event_3.jpg" style="width:100%">
+            <h4>Underwood Family Farms Pick Your Own Tomatoes</h4>
+             <h4 style="color:gray; font-size:17px; font-family: Arial">May 17th 2023</h4></a>
+        </div>
+    </div>
+
+    <div >
+        <h1 class="content_title"> Online Streaming</h1>
+         <h4 style="color:gray; font-size:17px; font-family: Arial; margin-right:60px;">We are proud to announce that during each event or Sunday, we host live streaming events with local farmers to introduce their plants, talk about their sustainability practices, and share their inspiring stories. This is a fantastic opportunity for you to get up close and personal with the people who grow your food, and learn more about how you can make a positive impact on the environment.</h4>
+        <h4 style="color:gray; font-size:17px; font-family: Arial; margin-right:60px;">So join us today and become part of our community of like-minded people who are committed to making a difference. With Harvest Hub, you'll not only get the freshest produce, but also the opportunity to connect with the people who grow it and learn about sustainable farming practices. We can't wait to welcome you to the Harvest Hub family!</h4>
+        <iframe class="iframe" src="https://www.youtube.com/embed/KfB2sx9uCkI" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
 
 <div class = "intro">
 	  <p style="font-family: myBingo;font-size:20px">Support Sustainable Farming</p>
